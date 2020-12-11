@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        headings: ['Abril Fatface', 'cursive'],
+        headings: ['Glass Antiqua', 'cursive'],
         body: ['Nunito', 'sans-serif;'],
       },
       colors: {

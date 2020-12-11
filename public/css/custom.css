@@ -1,3 +1,24 @@
+html {
+  scroll-snap-type: y proximity;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
 .intro {
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 50% 75%, 0 100%);
+}
+
+svg.deco {
+  max-width: 200px;
+}
+
+@media (min-width: 768px) {
+  svg.deco {
+    max-width: 300px;
+  }
 }
