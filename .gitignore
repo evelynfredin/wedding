@@ -105,4 +105,5 @@ dist
 
 # Custom
 .DS_Store
+public/img/original/
 
