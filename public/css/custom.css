@@ -1,16 +1,9 @@
-html {
-  scroll-snap-type: y mandatory;
-}
-
-section {
-  height: 100vh;
-  width: 100vw;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-}
-
 .intro {
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 50% 75%, 0 100%);
+}
+
+.clip-top {
+  clip-path: polygon(50% 25%, 100% 0%, 100% 100%, 0 100%, 0 0);
 }
 
 svg.deco {

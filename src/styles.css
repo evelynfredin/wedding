@@ -4,3 +4,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+span.countdown {
+  @apply bg-white p-4 rounded-lg;
+}
