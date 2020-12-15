@@ -15,3 +15,9 @@ svg.deco {
     max-width: 300px;
   }
 }
+
+@media (min-width: 1024px) {
+  .box {
+    margin-left: -250px;
+  }
+}
