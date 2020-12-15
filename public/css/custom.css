@@ -20,4 +20,8 @@ svg.deco {
   .box {
     margin-left: -250px;
   }
+
+  .box-2 {
+    margin-right: -250px;
+  }
 }

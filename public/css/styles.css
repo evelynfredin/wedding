@@ -627,6 +627,10 @@ video {
   order: 2;
 }
 
+.order-last{
+  order: 9999;
+}
+
 .font-headings{
   font-family: Glass Antiqua, cursive;
 }
@@ -747,6 +751,11 @@ video {
 .object-center{
   -o-object-position: center;
      object-position: center;
+}
+
+.object-top{
+  -o-object-position: top;
+     object-position: top;
 }
 
 .p-2{
@@ -877,6 +886,10 @@ video {
 
 .z-10{
   z-index: 10;
+}
+
+.z-50{
+  z-index: 50;
 }
 
 .transition{
@@ -1015,6 +1028,10 @@ span.countdown {
 @media (min-width: 1024px){
   .lg\:flex-row{
     flex-direction: row;
+  }
+
+  .lg\:order-first{
+    order: -9999;
   }
 
   .lg\:text-4xl{
