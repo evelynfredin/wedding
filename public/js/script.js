@@ -1,24 +1,29 @@
-const weddingDay = new Date("2021-02-20 23:30") - new Date();
-let textDay = document.querySelector('.cd-day');
-let textHour = document.querySelector('.cd-hour');
-let textMin = document.querySelector('.cd-min');
+var countDownDate = new Date("Feb 20, 2021 23:30").getTime();
+updateCountdown(); // Run once when the site is loaded.
+var timerFunction = setInterval(updateCountdown, 1000);
 
+var latestRandomIndex = 0;
+function updateCountdown() {
+  var now = new Date().getTime();
 
-const countdown = () => {
-let daysLeft = Math.floor(weddingDay / (1000 * 60 * 60 * 24));
-let hoursLeft = Math.floor((weddingDay / (1000 * 60 * 60)) % 24);
-let minutesLeft = Math.floor((weddingDay / 1000) / 60 % 60);
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
 
-let daysStr = daysLeft + 'd';
-let hourStr = hoursLeft + 'h';
-let minStr = minutesLeft + 'm';
+  // Display the result in the element with id="timer"
+  document.querySelector('.countdown').innerHTML = buildDateString(distance);
 
-textDay.textContent = daysStr;
-textHour.textContent = hourStr;
-textMin.textContent = minStr;
-
-
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(timerFunction);
+    document.querySelector('.countdown').innerHTML =
+      "Grattis teamet! Förhoppningsvis brinner det inte allt för mycket!";
+  }
 }
 
-countdown();
-setInterval(countdown, 60000);
+function buildDateString(distance) {
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  return `${days}d ${hours}h ${minutes}m`;
+}
