@@ -754,6 +754,10 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mt-9{
+  margin-top: 2.25rem;
+}
+
 .mt-10{
   margin-top: 2.5rem;
 }
@@ -787,6 +791,10 @@ video {
 
 .p-5{
   padding: 1.25rem;
+}
+
+.p-6{
+  padding: 1.5rem;
 }
 
 .p-10{
@@ -1047,6 +1055,10 @@ span.countdown {
 
   .md\:p-10{
     padding: 2.5rem;
+  }
+
+  .md\:w-5\/12{
+    width: 41.666667%;
   }
 
   .md\:grid-cols-2{
