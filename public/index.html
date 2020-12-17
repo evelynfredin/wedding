@@ -13,14 +13,23 @@
 </head>
 
 <body class="bg-blue-100 font-body">
-    <nav class="pt-2 px-2 pb-0 fixed w-full z-10 top-0 mt-0">
-        <button class="mb-0 p-2 rounded-full bg-indigo-50">
-            <svg class="w-12 h-12 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
+    <nav class="pt-2 px-2 pb-0 fixed w-full z-50 top-0 mt-0">
+        <button id="burger" class="mb-0 p-2 rounded-full bg-indigo-50">
+            <svg class="w-12 h-12 text-secondary focus:ring-2 focus:ring-blue-600" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
                 </path>
             </svg>
         </button>
+        <div id="menu" class="hidden">
+            <ul class="bg-indigo-100 h-screen w-screen flex flex-col items-center pt-40 ">
+                <li class="nav-item"><a href="index.html">Inicio</a></li>
+                <li class="nav-item"><a href="#cuando">¿Cuándo?</a></li>
+                <li class="nav-item"><a href="#donde">¿Dónde?</a></li>
+                <li class="nav-item"><a href="#regalos">Mesa de regalos</a></li>
+                <li class="nav-item"><a href="#rsvp">¡Acompáñanos!</a></li>
+            </ul>
+        </div>
     </nav>
     <section class="intro bg-indigo-50">
         <div class="container mx-auto h-screen flex flex-col items-center justify-center pb-20">
@@ -64,7 +73,7 @@
         </div>
     </section>
 
-    <section class="intro">
+    <section id="cuando" class="intro">
         <div class="flex justify-center w-screen h-screen items-center bg-indigo-50">
             <div class="m-8">
                 <p class="text-center text-xl text-primary md:text-2xl">Los esperamos el día Sábado 20 de Febrero, 2021
@@ -85,7 +94,7 @@
         </div>
     </section>
 
-    <section class="p-5 md:p-10 lg:p-20">
+    <section id="donde" class="p-5 md:p-10 lg:p-20">
         <div class="container flex flex-col lg:flex-row justify-center items-center mx-auto">
             <div class="self-center">
                 <img class="rounded-t-xl object-cover" src="img/church.jpeg" alt="Iglesia de San José en vista aérea">
@@ -115,7 +124,7 @@
         <div class="container flex flex-col lg:flex-row justify-center items-center mx-auto">
 
             <div
-                class="box-2 z-50 order-last lg:order-first bg-indigo-50 p-10 rounded-b-xl md:rounded-xl justify-center shadow-xl h-auto self-center w-full lg:w-auto">
+                class="box-2 z-20 order-last lg:order-first bg-indigo-50 p-10 rounded-b-xl md:rounded-xl justify-center shadow-xl h-auto self-center w-full lg:w-auto">
                 <h2
                     class="uppercase font-headings text-secondary text-2xl md:text-3xl lg:text-4xl text-center lg:text-left">
                     Recepción – 18:30hrs
@@ -143,7 +152,7 @@
         <img class="object-cover object-top w-screen h-screen" src="img/002.jpg" alt="">
     </section>
 
-    <section class="clip-top intro bg-indigo-50">
+    <section id="regalos" class="clip-top intro bg-indigo-50">
         <div class="container mx-auto flex flex-col w-screen h-screen justify-center items-center p-10">
             <h2 class="font-headings uppercase text-secondary text-2xl md:text-4xl">Mesa de Regalos</h2>
             <div>
@@ -159,7 +168,7 @@
         </div>
     </section>
 
-    <section class="p-auto flex flex-col h-screen mx-auto justify-center items-center">
+    <section id="rsvp" class="p-auto flex flex-col h-screen mx-auto justify-center items-center">
         <h2 class="font-headings uppercase text-secondary text-2xl md:text-4xl">Confirma Tu Asistencia</h2>
 
         <div class="bg-white mt-4">
