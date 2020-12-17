@@ -618,6 +618,10 @@ video {
   display: grid;
 }
 
+.hidden{
+  display: none;
+}
+
 .flex-col{
   flex-direction: column;
 }
