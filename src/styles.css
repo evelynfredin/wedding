@@ -8,3 +8,7 @@
 span.countdown {
   @apply bg-white p-4 rounded-lg;
 }
+
+.nav-item {
+  @apply my-2 hover:text-secondary transition-all ease-in-out duration-150;
+}
