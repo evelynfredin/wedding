@@ -1,4 +1,4 @@
-const countDownDate = new Date("Feb 20, 2021 23:30").getTime();
+const countDownDate = new Date("Jul 03, 2021 23:30").getTime();
 updateCountdown(); // Run once when the site is loaded.
 var timerFunction = setInterval(updateCountdown, 1000);
 
